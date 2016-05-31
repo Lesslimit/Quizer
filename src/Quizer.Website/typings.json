@@ -1,0 +1,8 @@
+{
+  "name": "quizer",
+  "globalDependencies": {
+    "aurelia-framework": "github:aurelia/framework/dist/system/aurelia-framework.d.ts#80d8cf90340a8c360a47d9318c344434825a32e6",
+    "aurelia-router": "github:aurelia/router/dist/system/aurelia-router.d.ts#ed2c2d54a9f5af6e56a94205131fd7e2f8173629"
+  }
+}
+³

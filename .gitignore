@@ -240,3 +240,5 @@ src/Quizer/wwwroot/lib/jquery/sizzle/
 LICENSE
 LICENSE.txt
 AUTHORS.txt
+src/Quizer.Website/wwwroot/jspm_packages/
+src/Quizer.Website/wwwroot/lib/
