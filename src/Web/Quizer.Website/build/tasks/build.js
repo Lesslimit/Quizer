@@ -9,10 +9,7 @@ var notify = require('gulp-notify');
 var typescript = require('gulp-tsb');
 var exec = require('child_process').exec;
 
-// transpiles changed es6 files to SystemJS format
-// the plumber() call prevents 'pipe breaking' caused
-// by errors from other gulp plugins
-// https://www.npmjs.com/package/gulp-plumber
+
 var typescriptCompiler = typescriptCompiler || null;
 gulp.task('build-system', function() {
   if(!typescriptCompiler) {
@@ -48,10 +45,6 @@ gulp.task('build-jspm', function () {
     });
 });
 
-// this task calls the clean task (located
-// in ./clean.js), then runs the build-system
-// and build-html tasks in parallel
-// https://www.npmjs.com/package/gulp-run-sequence
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',

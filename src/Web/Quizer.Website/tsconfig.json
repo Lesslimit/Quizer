@@ -4,7 +4,6 @@
     "rootDir": "src/",
     "outDir": "./wwwroot/dist",
     "sourceMap": true,
-    "sourceRoot": "./wwwroot/dist",
     "target": "es6",
     "module": "system",
     "declaration": false,
