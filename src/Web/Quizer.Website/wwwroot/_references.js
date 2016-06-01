@@ -16,7 +16,6 @@
 /// <reference path="../gulpfile.js" />
 /// <reference path="config.js" />
 /// <reference path="dist/app.js" />
-/// <reference path="dist/aurelia.js" />
 /// <reference path="dist/blur-image.js" />
 /// <reference path="dist/main.js" />
 /// <reference path="dist/viewmodels/tests.js" />

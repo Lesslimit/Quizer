@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "exports": {
+    "Quizer.Domain/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Debug/Quizer.Domain.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Quizer.Domain.dll": {}
+      }
+    }
+  }
+}

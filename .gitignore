@@ -234,11 +234,10 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
-src/Quizer/wwwroot/lib/jquery/src/
-src/Quizer/wwwroot/lib/jquery/sizzle/
 .bower.json
 LICENSE
 LICENSE.txt
 AUTHORS.txt
-src/Quizer.Website/wwwroot/jspm_packages/
-src/Quizer.Website/wwwroot/lib/
+src/**/**/wwwroot/jspm_packages/
+src/**/Quizer.Website/wwwroot/lib/
+src/Web/Quizer.Website/wwwroot/lib/
