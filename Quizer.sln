@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizer.Domain", "src\Shared
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizer.DataAccess", "src\Api\Quizer.DataAccess\Quizer.DataAccess.csproj", "{FEB0E426-BA6C-4F52-A897-A913C9918CC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quizer.Utilities", "Quizer.Utilities\Quizer.Utilities.csproj", "{DFA22CBC-4947-45C6-B00D-A19D5A063E0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{FEB0E426-BA6C-4F52-A897-A913C9918CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB0E426-BA6C-4F52-A897-A913C9918CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB0E426-BA6C-4F52-A897-A913C9918CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA22CBC-4947-45C6-B00D-A19D5A063E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA22CBC-4947-45C6-B00D-A19D5A063E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA22CBC-4947-45C6-B00D-A19D5A063E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA22CBC-4947-45C6-B00D-A19D5A063E0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,6 @@ Global
 		{7552A7AA-1CC2-4B0D-B303-FF1E6A7DC24F} = {77CC1FFE-35E2-471B-9D6A-A472C85DA43C}
 		{C7AEA8AE-57DE-479D-A5AF-D5ABE3901695} = {7552A7AA-1CC2-4B0D-B303-FF1E6A7DC24F}
 		{FEB0E426-BA6C-4F52-A897-A913C9918CC3} = {78CA8F67-8CD2-4E90-912E-C6F0902EB3DA}
+		{DFA22CBC-4947-45C6-B00D-A19D5A063E0F} = {7552A7AA-1CC2-4B0D-B303-FF1E6A7DC24F}
 	EndGlobalSection
 EndGlobal
