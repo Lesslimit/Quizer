@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 var changed = require('gulp-changed');
 var plumber = require('gulp-plumber');
-var sourcemaps = require('gulp-sourcemaps');
 var paths = require('../paths');
 var assign = Object.assign || require('object.assign');
 var notify = require('gulp-notify');
@@ -20,8 +19,6 @@ gulp.task('build-system', function() {
     .pipe(plumber())
    
     .pipe(typescriptCompiler())
-       .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sourcemaps.write({includeContent: false, sourceRoot: '/src'}))
     .pipe(gulp.dest(paths.output));
 });
 

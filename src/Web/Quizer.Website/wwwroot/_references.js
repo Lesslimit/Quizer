@@ -20,5 +20,3 @@
 /// <reference path="dist/main.js" />
 /// <reference path="dist/viewmodels/tests.js" />
 /// <reference path="dist/viewmodels/users.js" />
-/// <reference path="lib/bootstrap/dist/js/bootstrap.js" />
-/// <reference path="lib/jquery/dist/jquery.js" />
