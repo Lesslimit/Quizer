@@ -1,13 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Quizer.Domain
 {
     public class Option
     {
         [Required]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
-        public string Title { get; set; }
+        public string Text { get; set; }
 
         public bool IsCorrect { get; set; }
     }

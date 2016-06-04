@@ -4,27 +4,18 @@ using System.Net.Mail;
 
 namespace Quizer.Domain
 {
-    public class User
+    public abstract class User
     {
-        [Required]
-        public int Id { get; set; }
-
         [Required]
         public string FirstName { get; set; }
 
         [Required]
-        public string LastName { get; set; }
-
-        public MailAddress Email { get; set; }
-
-        public DateTime BirthDate { get; set; }
-
-        public int StudentsBookNumber { get; set; }
+        public  string MiddleName { get; set; }
 
         [Required]
-        public string Group { get; set; }
+        public string LastName { get; set; }
 
-        [Range(0, 100)]
-        public int Mark { get; set; }
+        public string Email { get; set; }
+        
     }
 }
