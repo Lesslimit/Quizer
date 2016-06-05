@@ -8,6 +8,7 @@
         "bin/Debug/Quizer.Domain.dll": {}
       },
       "runtime": {
+        "../../../packages/Newtonsoft.Json.8.0.3/lib/net45/Newtonsoft.Json.dll": {},
         "bin/Debug/Quizer.Domain.dll": {}
       }
     },

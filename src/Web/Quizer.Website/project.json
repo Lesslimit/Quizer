@@ -15,7 +15,8 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-final",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc2-final",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc2-final",
-    "SimpleInjector.Integration.AspNet": "3.1.5-rc2-07"
+    "SimpleInjector.Integration.AspNet": "3.1.5-rc2-07",
+    "SimpleInjector.Packaging": "3.2.0-alpha2"
   },
 
   "tools": {
@@ -32,6 +33,9 @@
   "frameworks": {
     "net46": {
       "dependencies": {
+        "Quizer.Security": {
+          "target": "project"
+        }
       }
     }
   },
