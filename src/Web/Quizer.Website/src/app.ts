@@ -9,8 +9,11 @@ export class App {
         config.title = 'Quizer';
 
         config.map([
-            { route: ['', 'tests'], name: 'tests', moduleId: 'viewmodels/tests', nav: true, title: 'Tests' },
-            { route: 'students', name: 'students', moduleId: 'viewmodels/users', nav: true, title: 'Students' }
+            { route: 'profile', name: 'profile', moduleId: 'viewmodels/profile', nav: true, title: 'Профіль' },
+            { route: ['', 'tests'], name: 'tests', moduleId: 'viewmodels/tests', nav: true, title: 'Тести' },
+            { route: 'test/:id', moduleId: 'viewmodels/test', nav: false, href: 'test/:id' },
+            { route: 'stats', name: 'stats', moduleId: 'viewmodels/stats', nav: true, title: 'Статистика' },
+            { route: 'group', name: 'group', moduleId: 'viewmodels/group', nav: true, title: 'Група' }
         ]);
 
         this.router = router;
