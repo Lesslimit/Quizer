@@ -1,5 +1,5 @@
 ﻿import {Router, RouterConfiguration} from 'aurelia-router'
-import {useView} from 'aurelia-framework'
+import {useView} from 'aurelia-framework';
 
 @useView('views/layout/app.html')
 export class App {

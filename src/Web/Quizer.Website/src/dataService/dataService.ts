@@ -1,16 +1,12 @@
-﻿import {HttpClient} from 'aurelia-fetch-client';
+﻿import {HttpClient, json} from 'aurelia-fetch-client';
 import {autoinject} from 'aurelia-framework';
 
+let httpClient = new HttpClient();
+
 @autoinject()
-export class DataService {
-    httpClient: HttpClient;
-
-    constructor(httpClient: HttpClient) {
-          this.httpClient = httpClient;
-     }
-
-     configure(baseUrl) {
-         this.httpClient.configure(config => {
+export class dataService {
+    static configure(baseUrl) {
+        httpClient.configure(config => {
              config
                  .withBaseUrl(baseUrl)
                  .withDefaults({
@@ -33,22 +29,25 @@ export class DataService {
          });
      }
 
-     get students() {
-        const ds = this;
-
+     static get students() {
         return {
             getAll() {
-                ds.httpClient.fetch('students/getAll').then(data => { });
+                return httpClient.fetch('students/getAll');
+            },
+            register(user) {
+                return httpClient.fetch('oauth/register',
+                {
+                    method: 'post',
+                    body: json(user)
+                });
             }
         }
     }
 
-     get tests() {
-        const ds = this;
-
+     static get tests() {
         return {
             getAll() {
-                ds.httpClient.fetch('tests/getAll').then(data => { });
+                return httpClient.fetch('tests/getAll');
             }
         }
     }
