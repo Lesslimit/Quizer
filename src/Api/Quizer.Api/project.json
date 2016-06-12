@@ -1,14 +1,26 @@
 {
   "dependencies": {
+    "letsencrypt.siteextension.job64": "0.4.11-beta",
+    "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.DataProtection": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.DataProtection.Abstractions": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.DataProtection.Extensions": "1.0.0-rc2-final",
+    "Microsoft.AspNetCore.Identity": "1.0.0-rc2-final",
     "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc2-final",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+    "Microsoft.Azure.DocumentDB": "1.7.1",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0-rc2-final",
     "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-rc2-final",
     "Microsoft.Extensions.Configuration.Json": "1.0.0-rc2-final",
     "Microsoft.Extensions.Logging": "1.0.0-rc2-final",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-final",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc2-final"
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0-rc2-final",
+    "Newtonsoft.Json": "8.0.3",
+    "SimpleInjector.Integration.AspNet": "3.1.5-rc2-07",
+    "SimpleInjector.Packaging": "3.2.0-alpha2",
+    "WindowsAzure.Storage": "7.0.0"
   },
 
   "tools": {
@@ -21,7 +33,22 @@
   "frameworks": {
     "net46": {
       "dependencies": {
+        "Quizer.Common": {
+          "target": "project"
+        },
+        "Quizer.DataAccess": {
+          "target": "project"
+        },
         "Quizer.Domain": {
+          "target": "project"
+        },
+        "Quizer.Security": {
+          "target": "project"
+        },
+        "Quizer.Services.MessageSending": {
+          "target": "project"
+        },
+        "Quizer.Utilities": {
           "target": "project"
         }
       }

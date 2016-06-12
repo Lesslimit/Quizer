@@ -16,7 +16,12 @@
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Quizer.Common\Quizer.Common.csproj" />
+    <ProjectReference Include="..\..\Shared\Quizer.DataAccess\Quizer.DataAccess.csproj" />
     <ProjectReference Include="..\..\Shared\Quizer.Domain\Quizer.Domain.csproj" />
+    <ProjectReference Include="..\..\Shared\Quizer.Security\Quizer.Security.csproj" />
+    <ProjectReference Include="..\..\Shared\Quizer.Utilities\Quizer.Utilities.csproj" />
+    <ProjectReference Include="..\Services\Quizer.Services.MessageSending\Quizer.Services.MessageSending.csproj" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
