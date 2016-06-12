@@ -242,3 +242,4 @@ src/**/**/wwwroot/jspm_packages/
 src/**/Quizer.Website/wwwroot/lib/
 src/Web/Quizer.Website/wwwroot/lib/
 src/Web/Quizer.Website/wwwroot/dist/
+src/Web/Quizer.Website/wwwroot/_references.js

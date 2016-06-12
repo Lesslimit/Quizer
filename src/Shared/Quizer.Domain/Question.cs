@@ -1,16 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace Quizer.Domain
 {
     public class Question
     {
         [Required]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         public string Title { get; set; }
 
-        public Option Options { get; set; }
+        public IList<Option> Options { get; set; }
 
-        public Option CorrectAnswer { get; set; }
+        public Option CorrectAnswer => Options.SingleOrDefault(o => o.IsCorrect);
     }
 }
