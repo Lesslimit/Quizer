@@ -18,16 +18,11 @@ namespace Quizer.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var db = storage.Db();
+            var db = storage.Db();//.CollectionAsync<Student>();
 
             await Task.Delay(500);
 
             return Ok(db.ToString());
         }
-    }
-
-    public class Students
-    {
-        
     }
 }

@@ -1,21 +1,29 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Net.Mail;
+﻿using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace Quizer.Domain
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public abstract class User
     {
         [Required]
-        public string FirstName { get; set; }
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        public string Email => Id;
+
+        [JsonProperty("phoneNumber")]
+        public string PhoneNumber { get; set; }
 
         [Required]
+        [JsonProperty("firstName")]
+        public string FirstName { get; set; }
+
+        [JsonProperty("middleName")]
         public  string MiddleName { get; set; }
 
         [Required]
+        [JsonProperty("lastName")]
         public string LastName { get; set; }
-
-        public string Email { get; set; }
-        
     }
 }

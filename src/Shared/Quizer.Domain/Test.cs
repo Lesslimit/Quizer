@@ -6,23 +6,20 @@ namespace Quizer.Domain
 {
     public class Test
     {
-
         [Required]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Range(0, 100)]
         public int Result { get; set; }
 
-        public DateTimeOffset Time { get; set; }
+        public DateTime Time { get; set; }
 
-        public DateTimeOffset StartTime { get; set; }
+        public DateTime StartTime { get; set; }
 
-        public DateTimeOffset EndTime { get; set; }
-    
+        public DateTime EndTime { get; set; }
+
         public bool IsComplete { get; set; }
 
-        public List<Question> Questions { get; set; }
-
-        public List<string> StudentsId { get; set; }
+        public IList<Question> Questions { get; set; }
     }
 }
