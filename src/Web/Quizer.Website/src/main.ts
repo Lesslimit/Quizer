@@ -1,11 +1,13 @@
 import 'bootstrap';
 import {Aurelia} from 'aurelia-framework';
+import {dataService} from "dataService/dataService";
 
 export function configure(aurelia: Aurelia) {
     aurelia.use
         .standardConfiguration()
         .developmentLogging();
 
+    dataService.configure('/api/v1.1');
     //Uncomment the line below to enable animation.
     //aurelia.use.plugin('aurelia-animator-css');
 
