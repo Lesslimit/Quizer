@@ -22,6 +22,10 @@ textarea {
     font-size: 20px;
     line-height: 1.4;
 }
+
+.padding-top-20 {
+    padding-top: 20px;
+}
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
   /* Hide captions */
