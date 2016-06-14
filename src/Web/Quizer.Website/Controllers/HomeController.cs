@@ -3,12 +3,18 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Quizer.Websiite.Controllers
 {
+    [Authorize(ActiveAuthenticationSchemes = "website")]
     public class HomeController : Controller
     {
-        [Authorize(ActiveAuthenticationSchemes = "website")]
         public IActionResult Index()
         {
             return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult SignIn()
+        {
+            return View("SignIn");
         }
 
         public IActionResult Error()

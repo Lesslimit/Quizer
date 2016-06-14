@@ -63,12 +63,8 @@ namespace Quizer.Websiite
             services.Configure<DocumentDbOptions>(Configuration.GetSection("DocumentDb"), true);
             services.Configure<AzureStorageOptions>(Configuration.GetSection("AzureStorage"), true);
 
-            services.AddMvc(options =>
-            {
-                //var jsonInputFormatter = options.InputFormatters.OfType<JsonInputFormatter>().Single(jif => jif.SupportedMediaTypes.Any(mt => mt == "application/json"));
-
-                //jsonInputFormatter.SerializerSettings.Converters.Add(new ClaimConverter());
-            }).AddJsonOptions(options =>
+            services.AddMvc()
+                .AddJsonOptions(options =>
             {
                 options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                 options.SerializerSettings.Converters.Add(new ClaimConverter());
@@ -104,7 +100,7 @@ namespace Quizer.Websiite
                 SlidingExpiration = true,
                 AutomaticChallenge = true,
                 CookieName = "Quizer.Website",
-                TicketDataFormat = new SecureDataFormat<AuthenticationTicket>(TicketSerializer.Default, app.ApplicationServices.GetDataProtector("Cookie"))
+                AccessDeniedPath = "/"
             });
 
             app.UseIdentity();
